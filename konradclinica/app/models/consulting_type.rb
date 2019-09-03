@@ -1,0 +1,2 @@
+class ConsultingType < ApplicationRecord
+end
