@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :appoiments
   resources :consulting_rooms
-  resources :consulting_types
   resources :doctors
   resources :professions do 
 	resources :doctors

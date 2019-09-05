@@ -10,21 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_01_231144) do
-
-  create_table "appoiments", force: :cascade do |t|
-    t.integer "consulting_room_id", null: false
-    t.integer "patient_id", null: false
-    t.integer "doctor_id", null: false
-    t.datetime "begindate"
-    t.datetime "enddate"
-    t.string "comment"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["consulting_room_id"], name: "index_appoiments_on_consulting_room_id"
-    t.index ["doctor_id"], name: "index_appoiments_on_doctor_id"
-    t.index ["patient_id"], name: "index_appoiments_on_patient_id"
-  end
+ActiveRecord::Schema.define(version: 2019_08_29_002218) do
 
   create_table "consulting_rooms", force: :cascade do |t|
     t.string "name"
@@ -67,9 +53,6 @@ ActiveRecord::Schema.define(version: 2019_09_01_231144) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "appoiments", "consulting_rooms"
-  add_foreign_key "appoiments", "doctors"
-  add_foreign_key "appoiments", "patients"
   add_foreign_key "consulting_rooms", "consultig_types"
   add_foreign_key "doctors", "professions"
 end
