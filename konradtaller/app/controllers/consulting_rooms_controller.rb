@@ -69,6 +69,6 @@ class ConsultingRoomsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def consulting_room_params
-      params.require(:consulting_room).permit(:name, :location, :type)
+      params.require(:consulting_room).permit(:name, :location, :typeroom)
     end
 end

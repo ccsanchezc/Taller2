@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_05_143936) do
+ActiveRecord::Schema.define(version: 2019_09_05_165809) do
 
   create_table "appoiments", force: :cascade do |t|
     t.integer "consulting_room_id", null: false
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2019_09_05_143936) do
     t.integer "document"
     t.string "name"
     t.string "lastname"
-    t.date "bithdate"
+    t.date "birthdate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

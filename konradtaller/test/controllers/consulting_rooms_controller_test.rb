@@ -17,7 +17,7 @@ class ConsultingRoomsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create consulting_room" do
     assert_difference('ConsultingRoom.count') do
-      post consulting_rooms_url, params: { consulting_room: { location: @consulting_room.location, name: @consulting_room.name, type: @consulting_room.type } }
+      post consulting_rooms_url, params: { consulting_room: { location: @consulting_room.location, name: @consulting_room.name, typeroom: @consulting_room.typeroom } }
     end
 
     assert_redirected_to consulting_room_url(ConsultingRoom.last)
@@ -34,7 +34,7 @@ class ConsultingRoomsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update consulting_room" do
-    patch consulting_room_url(@consulting_room), params: { consulting_room: { location: @consulting_room.location, name: @consulting_room.name, type: @consulting_room.type } }
+    patch consulting_room_url(@consulting_room), params: { consulting_room: { location: @consulting_room.location, name: @consulting_room.name, typeroom: @consulting_room.typeroom } }
     assert_redirected_to consulting_room_url(@consulting_room)
   end
 

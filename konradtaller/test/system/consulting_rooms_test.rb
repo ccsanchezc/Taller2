@@ -16,7 +16,7 @@ class ConsultingRoomsTest < ApplicationSystemTestCase
 
     fill_in "Location", with: @consulting_room.location
     fill_in "Name", with: @consulting_room.name
-    fill_in "Type", with: @consulting_room.type
+    fill_in "Typeroom", with: @consulting_room.typeroom
     click_on "Create Consulting room"
 
     assert_text "Consulting room was successfully created"
@@ -29,7 +29,7 @@ class ConsultingRoomsTest < ApplicationSystemTestCase
 
     fill_in "Location", with: @consulting_room.location
     fill_in "Name", with: @consulting_room.name
-    fill_in "Type", with: @consulting_room.type
+    fill_in "Typeroom", with: @consulting_room.typeroom
     click_on "Update Consulting room"
 
     assert_text "Consulting room was successfully updated"

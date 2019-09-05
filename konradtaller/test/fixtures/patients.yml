@@ -4,10 +4,10 @@ one:
   document: 1
   name: MyString
   lastname: MyString
-  bithdate: 2019-09-05
+  birthdate: 2019-09-05
 
 two:
   document: 1
   name: MyString
   lastname: MyString
-  bithdate: 2019-09-05
+  birthdate: 2019-09-05

@@ -4,7 +4,7 @@ class CreatePatients < ActiveRecord::Migration[6.0]
       t.integer :document
       t.string :name
       t.string :lastname
-      t.date :bithdate
+      t.date :birthdate
 
       t.timestamps
     end

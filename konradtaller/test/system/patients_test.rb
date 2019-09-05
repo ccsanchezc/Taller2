@@ -14,7 +14,7 @@ class PatientsTest < ApplicationSystemTestCase
     visit patients_url
     click_on "New Patient"
 
-    fill_in "Bithdate", with: @patient.bithdate
+    fill_in "Birthdate", with: @patient.birthdate
     fill_in "Document", with: @patient.document
     fill_in "Lastname", with: @patient.lastname
     fill_in "Name", with: @patient.name
@@ -28,7 +28,7 @@ class PatientsTest < ApplicationSystemTestCase
     visit patients_url
     click_on "Edit", match: :first
 
-    fill_in "Bithdate", with: @patient.bithdate
+    fill_in "Birthdate", with: @patient.birthdate
     fill_in "Document", with: @patient.document
     fill_in "Lastname", with: @patient.lastname
     fill_in "Name", with: @patient.name
