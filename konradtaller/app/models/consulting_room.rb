@@ -1,0 +1,2 @@
+class ConsultingRoom < ApplicationRecord
+end
