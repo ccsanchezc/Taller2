@@ -11,7 +11,7 @@ class Appoiment < ApplicationRecord
 
 
 def no_reservation_overlap
-  if (Appoiment.where("(? BETWEEN begindate AND enddate OR ? BETWEEN begindate AND enddate) AND patient = ? AND doctor = ?", self.begindate, self.enddate, self.patient, self.doctor).any?)
+  if (Appoiment.where("(? BETWEEN begindate AND enddate OR ? BETWEEN begindate AND enddate) AND patient_id = ? AND doctor_id = ?", self.begindate, self.enddate, self.patient, self.doctor).any?)
      errors.add(:enddate, 'it overlaps another reservation')
   end
 end
